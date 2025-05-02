@@ -1,20 +1,52 @@
-Steps followed throughout the process:
+Steps to Reproduce:
 
-1) Open this URL 'https://php811.funnelkitdemos.com/'.
-   - There are products on the page. Locate any product with an ‘add to cart’ button and click on it.
-   - The side cart will auto-open after the product is added to the cart. It looks like
-     http://imgwxl.com/a/2023-12-14-10:52:03.png
-   - At the bottom, if there are any products: http://imgwxl.com/a/2023-12-14-10:52:26.png
-   - 
-2) Add the product and wait.
-   - Click on checkout: http://imgwxl.com/a/2023-12-14-10:53:49.png.
-   - 
-3) You will be redirected to the checkout page: https://php811.funnelkitdemos.com/checkout/.
-   Validate it.
-   - Please fill in any random data. Then, choose the ‘Cash on delivery’ payment method.
-   - You might see an offer. http://imgwxl.com/a/2023-12-14-10:57:45.png. Select the product, wait,
-     and then place an order.
-   - After successful payment, an offer page will likely open if it gets open. Scroll down, you will see Accept (Add this to the order-like text) and No Thanks-like text. 
-4) Accept the offer, click Yes, wait.
-   - It will take you to the thank you page. There you will find the order id.
-   If the order ID is reflected, the test case is completed.
+Objective
+This test ensures the smooth operation of the e-commerce checkout process, including product addition, cart validation, checkout, payment, offers, and successful order ID generation.
+
+Test Steps
+1. Visit Website
+Go to: [https://php811.funnelkitdemos.com/](url)
+
+2. Add Product to Cart
+Select any product and click on ‘Add to Cart’.
+
+![image](https://github.com/user-attachments/assets/4bebd914-17f9-4fcc-9e80-ad16250dabe2)
+
+
+3. Verify Cart
+Check if the side cart auto-opens and displays the selected product.
+
+
+
+4. Proceed to Checkout
+Click the ‘Checkout’ button to move to the checkout page.
+
+
+
+5. Fill in Checkout Form
+Enter random customer details.
+
+Choose ‘Cash on Delivery’ as the payment method.
+
+6. Review and Apply Offer
+If an offer appears, select the product and wait.
+
+Accept the offer and proceed to payment.
+
+
+
+7. Order Confirmation
+After payment, verify the Thank You page loads with a displayed Order ID.
+
+The test is successful if the order ID is visible.
+
+Expected Outcome:
+Cart opens and updates with added product.
+
+Checkout process functions correctly.
+
+Payment method is selectable.
+
+Offer is applied successfully.
+
+Order ID is displayed on the Thank You page.
